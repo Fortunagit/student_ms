@@ -76,5 +76,8 @@ public class StudentController {
         System.out.println("Student with Id " + id);
     }
 
-    // More Methods to be implemented for future
+    // To test git
+    public void testGit(){
+        System.out.println("Test Git");
+    }
 }
