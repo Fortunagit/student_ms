@@ -14,6 +14,7 @@ import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
 @RestController
 @RequestMapping("api/v1/student")
 public class StudentController {
+
     @Autowired
     StudentService studentService;
 
@@ -63,6 +64,8 @@ public class StudentController {
         return studentService.getStudentById(id).orElse(null);
 
     }
+
+
     @PutMapping("/{id}") // update
     public Student updateStudent(@PathVariable Long id, @RequestBody Student updatedStudent) {
         return studentService.updateStudent(id,updatedStudent);
@@ -72,6 +75,6 @@ public class StudentController {
     public void deleteStudent(){
         System.out.println("Student with Id " + id);
 
-
+// deleteMapping
     }
     }
