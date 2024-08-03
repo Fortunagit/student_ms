@@ -78,6 +78,6 @@ public class StudentController {
 
     // To test git
     public void testGit(){
-        System.out.println("Test Git ");
+        System.out.println("Test Git. ");
     }
 }
